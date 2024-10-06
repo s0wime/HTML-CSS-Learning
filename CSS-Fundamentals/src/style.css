@@ -19,11 +19,17 @@ h4 {
   color: #1098ad;
 }
 
+body {
+  width: 800px;
+  margin: 0 auto;
+}
+
 header {
   border-top: 10px solid #1098ad;
   background-color: #f7f7f7;
   padding: 20px 40px;
   margin-bottom: 60px;
+  height: 80px;
 }
 
 .article-header {
@@ -103,6 +109,7 @@ aside {
   background-color: #f7f7f7;
   border: 5px solid #1098ad;
   padding: 50px 0;
+  width: 500px;
 }
 
 a:link {
@@ -124,4 +131,9 @@ a:active {
   background-color: #1098ad;
   color: white;
   font-style: italic;
+}
+
+.post-image {
+  width: 100%;
+  height: auto;
 }
