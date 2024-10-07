@@ -30,9 +30,6 @@ article {
 }
 
 aside {
-  float: right;
-  width: 300px;
-
   padding: 50px 40px;
   background-color: #f7f7f7;
   border-top: 5px solid #1098ad;
@@ -122,7 +119,11 @@ li {
   margin-bottom: 10px;
 }
 
-li:first-child {
+li:last-child {
+  margin-bottom: 0;
+}
+
+/* li:first-child {
   font-weight: bold;
 }
 
@@ -133,7 +134,7 @@ li:last-child {
 
 li:nth-child(odd) {
   color: red;
-}
+} */
 
 footer p {
   font-size: 16px;
@@ -172,7 +173,6 @@ a:active {
 
 nav a:link {
   margin-right: 30px;
-  margin-top: 10px;
   display: inline-block;
 }
 
@@ -188,4 +188,40 @@ button {
   position: absolute;
   bottom: 50px;
   right: 50px;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.author-box {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.author {
+  margin-left: 15px;
+  margin-bottom: 0;
+}
+
+.related-post {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 30px;
+}
+
+.related-link:link {
+  font-size: 17px;
+  font-weight: bold;
+  display: inline-block;
+  margin-bottom: 5px;
+}
+
+.related-author {
+  margin-bottom: 0;
+  font-size: 14px;
 }
