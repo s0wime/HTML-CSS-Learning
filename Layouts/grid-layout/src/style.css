@@ -14,7 +14,6 @@ header {
   border-top: 10px solid #1098ad;
   background-color: #f7f7f7;
   padding: 20px 40px;
-  margin-bottom: 60px;
 }
 
 .article-header {
@@ -23,10 +22,6 @@ header {
 
 nav {
   font-size: 18px;
-}
-
-article {
-  margin-bottom: 60px;
 }
 
 aside {
@@ -226,18 +221,24 @@ header {
   font-size: 14px;
 }
 
-.article-aside-box {
-  display: flex;
-  align-items: flex-start;
-  gap: 75px;
-  margin-bottom: 60px;
+body {
+  display: grid;
+  grid-template-columns: 1fr 300px;
+  column-gap: 75px;
+  row-gap: 60px;
+  align-items: start;
+}
+
+header {
+  grid-column: 1 / -1;
 }
 
 article {
-  flex: 1;
-  margin-bottom: 0;
 }
 
 aside {
-  flex: 0 0 300px;
+}
+
+footer {
+  grid-column: 1 / -1;
 }
