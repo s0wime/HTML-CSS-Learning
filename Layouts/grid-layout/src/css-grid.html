@@ -33,6 +33,7 @@
       }
 
       .container--1 {
+        display: none;
         /* STARTER */
         font-family: sans-serif;
         background-color: #ddd;
@@ -40,6 +41,26 @@
         margin: 40px;
 
         /* CSS GRID */
+        display: grid;
+        /* grid-template-columns: 1fr 1fr 1fr auto; */
+        /* grid-template-rows: 250px 150px; */
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: 1fr 1fr;
+
+        /* height: 500px; */
+
+        column-gap: 20px;
+        row-gap: 40px;
+      }
+
+      .el--8 {
+        /* grid-column: 1 / span 2; */
+        grid-column: 1 / -1;
+        grid-row: 2;
+      }
+
+      .el--6 {
+        /* grid-row: 3 / 6; */
       }
 
       .container--2 {
@@ -53,6 +74,21 @@
         height: 600px;
 
         /* CSS GRID */
+        display: grid;
+        grid-template-columns: 125px 200px 125px;
+        grid-template-rows: 250px 100px;
+        gap: 30px;
+
+        align-content: center;
+        justify-content: center;
+
+        align-items: center;
+        justify-items: center;
+      }
+
+      .el--3 {
+        align-self: end;
+        justify-self: end;
       }
     </style>
   </head>
